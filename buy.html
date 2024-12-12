@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Let's Potato Chips</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <a href="index.html"><img src="images/letslogo.png" alt="Let's logo"></a>
+        <nav>
+            <a href="products.html">Products</a>
+            <a href="buy.html">Where to Buy</a>
+            <a href="nutrition.html">Nutritional Considerations</a>
+            <a href="media.html">As Seen on TV</a>
+        </nav>
+    </header>
+    <main>
+        <div class="chains">
+            <img src="images/walmart.png" alt="Walmart">
+            <img src="images/kwiktrip.jpg" alt="Kwik Trip">
+            <img src="images/costco.png" alt="Costco">
+            <img src="images/711.jpg" alt="7-Eleven">
+        </div>
+        <div class="online">
+            <div class="container"></div>
+            <template>
+                <div class="row">
+                    <label>Coffee</label>
+                    <select>
+                        <option value="drip-coffee">Drip Coffee</option>
+                        <option value="cafe-au-lait">Cafe Au Lait</option>
+                        <option value="americano">Americano</option>
+                        <option value="cappuccino">Cappuccino</option>
+                        <option value="latte">Latte</option>
+                    </select>
+                    <label>Size
+                        <select>
+                            <option value="small">Small 12 oz.</option>
+                            <option value="large">Large 16 oz.</option>
+                        </select>
+                    </label>
+                    <label>Quantity
+                        <input type=number value=1 min=1 max=10>
+                        <a class="delete" onclick="removeRow(event)">X</a>
+                    </label>
+                </div>
+            </template>
+            <div>
+                <a class="add-button"><span>+</span>Add Coffee</a>
+            </div>   
+        </div>
+    </main>
+    <footer>
+        <h1>Get in touch with Let's</h1>
+        <textarea>Leave a message...</textarea>
+    </footer>
+</body>
+</html>
