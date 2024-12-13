@@ -26,8 +26,8 @@ header>img{
     margin: 0rem;
     padding: 5%;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    align-content: center;
+    justify-content: center;
 }
 header>nav a:hover{
     background-color: #e0793a;
@@ -37,6 +37,20 @@ header>nav a:hover{
     color: #fff;
     padding: 1rem;
     margin: 1rem;
+}
+.special img{
+    max-width: 40%;
+    justify-content: right;
+}
+.deals img{
+    max-width: 40%;
+    justify-content: left;
+}
+.deals{
+    text-align: right;
+}
+.ourstory img{
+    max-width: 40%;
 }
 footer{
     background-color: #274879;
@@ -48,4 +62,7 @@ footer{
 textarea{
     background-color: #e0793a;
     color: #fff;
+}
+@media (min-width: 1000px){
+
 }
